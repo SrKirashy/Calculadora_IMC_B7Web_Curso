@@ -38,6 +38,9 @@ body {
     font-size: 14px;
     outline: none;
 }
+.container .leftSide input:disabled {
+    opacity: .4;
+}
 .container .leftSide button{
     background-color: #227C9D;
     color: #FFF;
@@ -52,6 +55,9 @@ body {
 }
 .container .leftSide button:hover {
     background-color: #2ea2cc;
+}
+.container .leftSide button:disabled{
+    opacity: .4;
 }
 
 
@@ -68,4 +74,26 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+}
+.container .rightSide .rightBig {
+    display: flex;
+    flex: 1;
+}
+
+.container .rightSide .rightArrow {
+    position: absolute;
+    background-color: #227C9D;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: -35px;
+    margin-top: 145px;
+    transition: all ease 0.5s;
+}
+.container .rightSide .rightArrow:hover {
+    background-color: #2ea2cc;
 }
